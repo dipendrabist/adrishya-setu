@@ -26,7 +26,6 @@
 - [How It Works](#how-it-works)
 - [Security Notes](#security-notes)
 - [Troubleshooting](#troubleshooting)
-- [Credits](#credits)
 
 ---
 

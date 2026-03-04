@@ -28,7 +28,6 @@ EOF
     echo -e "${DIM}${CYN}        ── The Invisible Bridge ──${NC}"
     echo
     echo -e "${DIM}${WHT}$(printf '%.0s─' {1..54})${NC}"
-    echo -e " ${DIM}Author : TechChip   ${BLU}youtube.com/@techchipnet${NC}"
     echo -e " ${DIM}Version: 2.0   License: MIT${NC}"
     echo -e "${DIM}${WHT}$(printf '%.0s─' {1..54})${NC}"
     echo

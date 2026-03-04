@@ -31,7 +31,6 @@ EOF
     echo -e "${DIM}${WHT}        Installer  v2.0${NC}"
     echo
     echo -e "${DIM}${WHT}$(printf '%.0s─' {1..54})${NC}"
-    echo -e " ${DIM}Author : TechChip   ${BLU}youtube.com/@techchipnet${NC}"
     echo -e "${DIM}${WHT}$(printf '%.0s─' {1..54})${NC}\n"
 }
 

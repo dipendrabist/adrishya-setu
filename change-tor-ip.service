@@ -1,0 +1,29 @@
+[Unit]
+Description=Adṛśya-Setu — Tor IP Rotation Service
+Documentation=https://github.com/dipendrabist/adrishya-setu
+After=network-online.target tor.service
+Wants=network-online.target
+Requires=tor.service
+
+[Service]
+Type=simple
+# Replaced by setup.sh with the actual install path
+ExecStart=HOME/change_tor_ip.sh
+Restart=always
+RestartSec=10
+# Give Tor a moment before the very first run
+ExecStartPre=/bin/sleep 5
+
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=HOME
+
+# Logging (journald + syslog identifier)
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=adrishya-setu
+
+[Install]
+WantedBy=multi-user.target
